@@ -1,0 +1,30 @@
+[
+    {
+        "tipo_movimiento": "Retiro",
+        "valor": 575,
+        "cuenta": {
+            "id": 1
+        }
+    },
+    {
+        "tipo_movimiento": "Deposito",
+        "valor": 600,
+        "cuenta": {
+            "id": 2
+        }
+    },
+    {
+        "tipo_movimiento": "Deposito",
+        "valor": 150,
+        "cuenta": {
+            "id": 3
+        }
+    },
+    {
+        "tipo_movimiento": "Retiro",
+        "valor": 540,
+        "cuenta": {
+            "id": 4
+        }
+    }
+]

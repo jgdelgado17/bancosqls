@@ -1,0 +1,47 @@
+[
+    {
+        "numero_cuenta": "478758",
+        "tipo_cuenta": "Ahorro",
+        "saldo": 2000,
+        "estado": true,
+        "cliente": {
+            "id": 1
+        }
+    },
+    {
+        "numero_cuenta": "225487",
+        "tipo_cuenta": "Corriente",
+        "saldo": 100,
+        "estado": true,
+        "cliente": {
+            "id": 2
+        }
+    },
+    {
+        "numero_cuenta": "495878",
+        "tipo_cuenta": "Ahorro",
+        "saldo": 0,
+        "estado": true,
+        "cliente": {
+            "id": 3
+        }
+    },
+    {
+        "numero_cuenta": "496825",
+        "tipo_cuenta": "Ahorro",
+        "saldo": 540,
+        "estado": true,
+        "cliente": {
+            "id": 2
+        }
+    },
+    {
+        "numero_cuenta": "585545",
+        "tipo_cuenta": "Corriente",
+        "saldo": 1000,
+        "estado": true,
+        "cliente": {
+            "id": 1
+        }
+    }
+]
