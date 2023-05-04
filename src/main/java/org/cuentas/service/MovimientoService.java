@@ -74,7 +74,7 @@ public class MovimientoService {
                         cuenta_asociada.setSaldo(saldo_inicial - movimiento.getValor());
                     else
                         throw new IllegalArgumentException(
-                                "ERROR: Saldo no disponible. Detail: Tiene un saldo de " + saldo_inicial
+                                "Saldo no disponible. Tiene un saldo de " + saldo_inicial
                                         + ", insuficiente para realizar el retiro");
                     break;
                 case "Deposito":

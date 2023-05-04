@@ -31,7 +31,7 @@ public class MovimientoController {
         } catch (Exception e) {
             String message = e.getCause().getCause().getCause().getMessage();
             Message messageResponse = new Message();
-            messageResponse.buildMessage(message);
+            messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity(messageResponse).build();
         }
@@ -50,7 +50,7 @@ public class MovimientoController {
         } catch (Exception e) {
             String message = e.getCause().getCause().getCause().getMessage();
             Message messageResponse = new Message();
-            messageResponse.buildMessage(message);
+            messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity(messageResponse).build();
         }
@@ -70,7 +70,7 @@ public class MovimientoController {
                 message = e.getMessage();
 
             Message messageResponse = new Message();
-            messageResponse.buildMessage(message);
+            messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity(messageResponse).build();
         }
@@ -89,7 +89,7 @@ public class MovimientoController {
         } catch (Exception e) {
             String message = e.getCause().getCause().getCause().getMessage();
             Message messageResponse = new Message();
-            messageResponse.buildMessage(message);
+            messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity(messageResponse).build();
         }
@@ -108,7 +108,7 @@ public class MovimientoController {
         } catch (Exception e) {
             String message = e.getCause().getCause().getCause().getMessage();
             Message messageResponse = new Message();
-            messageResponse.buildMessage(message);
+            messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity(messageResponse).build();
         }
