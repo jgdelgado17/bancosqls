@@ -15,6 +15,12 @@ public class CuentaService {
     @Inject
     CuentaRepository repository;
 
+    
+
+    public CuentaService(CuentaRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Cuenta> findAll() {
         return repository.listAll();
     }

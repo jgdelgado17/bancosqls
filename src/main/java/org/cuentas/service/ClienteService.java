@@ -15,6 +15,10 @@ public class ClienteService {
     @Inject
     ClienteRepository repository;
 
+    public ClienteService(ClienteRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Cliente> findAll() {
         return repository.listAll();
     }

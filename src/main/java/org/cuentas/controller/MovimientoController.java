@@ -29,7 +29,12 @@ public class MovimientoController {
                 return Response.ok(movimientos).status(Response.Status.NO_CONTENT).build();
             return Response.ok(movimientos).build();
         } catch (Exception e) {
-            String message = e.getCause().getCause().getCause().getMessage();
+            String message;
+            if (e.getCause() != null)
+                message = e.getCause().getCause().getCause().getMessage();
+            else
+                message = e.getMessage();
+
             Message messageResponse = new Message();
             messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
@@ -48,7 +53,12 @@ public class MovimientoController {
             return Response.ok(movimiento).build();
 
         } catch (Exception e) {
-            String message = e.getCause().getCause().getCause().getMessage();
+            String message;
+            if (e.getCause() != null)
+                message = e.getCause().getCause().getCause().getMessage();
+            else
+                message = e.getMessage();
+
             Message messageResponse = new Message();
             messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
@@ -63,7 +73,6 @@ public class MovimientoController {
             return Response.ok(createdMovimiento).status(Response.Status.CREATED).build();
         } catch (Exception e) {
             String message;
-
             if (e.getCause() != null)
                 message = e.getCause().getMessage();
             else
@@ -87,7 +96,12 @@ public class MovimientoController {
             }
             return Response.status(Response.Status.NOT_FOUND).build();
         } catch (Exception e) {
-            String message = e.getCause().getCause().getCause().getMessage();
+            String message;
+            if (e.getCause() != null)
+                message = e.getCause().getCause().getCause().getMessage();
+            else
+                message = e.getMessage();
+
             Message messageResponse = new Message();
             messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)
@@ -106,7 +120,12 @@ public class MovimientoController {
             }
             return Response.status(Response.Status.NOT_FOUND).build();
         } catch (Exception e) {
-            String message = e.getCause().getCause().getCause().getMessage();
+            String message;
+            if (e.getCause() != null)
+                message = e.getCause().getCause().getCause().getMessage();
+            else
+                message = e.getMessage();
+
             Message messageResponse = new Message();
             messageResponse.setError(message);
             return Response.status(Response.Status.BAD_REQUEST)

@@ -23,6 +23,10 @@ public class ClienteController {
     @Inject
     private ClienteService service;
 
+    public ClienteController(ClienteService service) {
+        this.service = service;
+    }
+
     @GET
     public Response getAllClientes() {
         try {

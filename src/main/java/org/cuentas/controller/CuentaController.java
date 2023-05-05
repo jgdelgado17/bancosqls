@@ -24,6 +24,12 @@ public class CuentaController {
     @Inject
     CuentaService service;
 
+    
+
+    public CuentaController(CuentaService service) {
+        this.service = service;
+    }
+
     @GET
     public Response getAllCuentas() {
         try {
